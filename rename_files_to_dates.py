@@ -1,3 +1,10 @@
+"""
+Skrypt kopiujący zdjęia z wybranego folderu do innego folderu, podmieniający im nazwy na:
+
+    RRRRMMDD oryginalnaNazwa
+
+"""
+
 import os
 import shutil
 from PIL import Image
@@ -46,3 +53,4 @@ def rename_files_to_dates(input_folder, output_folder):
         shutil.copy2(src_path, dst_path)  # zachowuje metadane
 
 rename_files_to_dates(input_folder, output_folder)
+
